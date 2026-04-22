@@ -2,3 +2,8 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+:root {
+  --page-bg: url(../images/cover-image.png);
+  --page-bg-dark: url(../images/cover-image-dark.png);
+  --page-bg-light: url(../images/cover-image-light.png);
+}
