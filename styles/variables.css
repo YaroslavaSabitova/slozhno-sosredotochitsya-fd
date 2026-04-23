@@ -3,17 +3,23 @@
   и их переопределение под различные устройства
 */
 :root {
-  --page-bg: url(../images/cover-image-dark.png);
   --font-family: 'IBM Plex Mono', sans-serif;
-  --padding-inline: 0 10px;
   --font-size: 18px;
-  --accent-color: #ff0070;
+
+  --page-bg: url(../images/cover-image-dark.png);
+  --page-padding: 10px 10px;
+
   --main-title-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --main-title-color: #db00ff;
+
+  --accent-color: #ff0070;
+  --btn-color: #ff0070;
+  --btn-hover-border: rgba(255, 0, 112, 0.4);
 }
 
 @media (width >= 768px) {
   :root {
-    --padding-inline: 0 20px;
+    --page-padding: 20px 20px;
   }
 }
 

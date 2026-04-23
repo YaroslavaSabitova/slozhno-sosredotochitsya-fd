@@ -10,4 +10,16 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   --page-bg: url(../images/cover-image-light.png);
+  --accent-color: #ff8dcb;
+  --main-title-color: #ffc2e6;
+  --btn-color: #353430;
+  --btn-hover-border: rgba(50, 49, 45, 0.4);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    /* Дублируем только те же переменные, что и выше */
+  }
+
+  /* Остальные стили, только при необходимости */
 }
