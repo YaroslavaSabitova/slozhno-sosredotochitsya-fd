@@ -2,14 +2,67 @@
 
 .page {
   margin-bottom: 500px;
+  padding: var(--padding-inline);
   outline: 1px solid red;
+  font-family: var(--font-family, Verdana, Tahoma, sans-serif);
+  font-size: var(--font-size, 18px);
   background-color: #001344;
-  background-image: var(--page-bg-dark);
+  background-image: var(--page-bg);
   background-position: 50% 50%;
   background-size: cover;
   background-attachment: fixed;
 }
 
+.header {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr min-content 1fr;
+  height: 100vh;
+  min-height: 668px;
+  outline: 1px solid red;
+}
+
+.header__theme-menu {
+  justify-self: end;
+  align-self: center;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.header__theme-menu-button_active {
+  pointer-events: none;
+}
+
+.main-title {
+  font-size: var(--main-title-size);
+}
+
+@media (width >= 768px) {
+  .header {
+    min-height: 1024px;
+  }
+}
+
+@media (width >= 1024px) {
+  .header {
+    min-height: 768px;
+  }
+
+  .header__theme-menu {
+    justify-self: center;
+    align-self: start;
+  }
+
+  .header__theme-menu-list {
+    flex-direction: row;
+  }
+}
+
+/* удалить в конце */
 section {
   min-height: 500px;
 }
