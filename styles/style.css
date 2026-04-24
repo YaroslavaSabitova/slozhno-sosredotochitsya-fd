@@ -53,6 +53,7 @@
 
 .header__theme-menu-button:focus-visible {
   border-bottom: 1px solid var(--btn-color);
+  outline: none;
 }
 
 .header__theme-menu-button_active {
@@ -111,8 +112,33 @@
 
 .card__content {
   color: var(--card-text);
+  font-weight: 400;
   font-size: inherit;
   line-height: 130%;
+}
+
+.card__link {
+  border: 1px solid transparent;
+  color: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  text-decoration: none;
+  text-shadow: 2px 1px 0 var(--accent-color);
+  transition: all 0.3s ease;
+}
+
+.card__link:hover {
+  border-bottom: 1px solid var(--card-text);
+}
+
+.card__link:focus {
+  outline: none;
+}
+
+.card__link:focus-visible {
+  border: 1px solid var(--card-text);
+  outline: none;
 }
 
 .footer {
