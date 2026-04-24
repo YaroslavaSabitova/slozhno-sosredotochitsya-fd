@@ -21,6 +21,7 @@
   --title-decor-bg: var(--accent-color);
 
   --second-title: var(--btn-color);
+  --card-text: var(--btn-color);
 }
 
 .theme-light .header__decor {

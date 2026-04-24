@@ -21,7 +21,9 @@
   --title-decor-bg: var(--accent-color);
 
   --second-title: var(--accent-color);
+  --card-text: #f1b2ce;
 
+  --section-title-margin: 20px;
   --section-gap: 50px;
   --padding-block: 40px;
 }

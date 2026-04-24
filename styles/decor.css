@@ -50,6 +50,7 @@
 .title-decor {
   color: var(--title-decor-color);
   background-color: var(--title-decor-bg);
+  font-size: inherit;
 }
 
 .title-decor_bold {
