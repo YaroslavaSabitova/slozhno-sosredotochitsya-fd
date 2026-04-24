@@ -16,10 +16,16 @@
   --btn-hover-border: rgba(50, 49, 45, 0.4);
 }
 
+.theme-light .header__decor {
+  display: none;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     /* Дублируем только те же переменные, что и выше */
   }
 
-  /* Остальные стили, только при необходимости */
+  .header__decor {
+    display: none;
+  }
 }
