@@ -19,11 +19,18 @@
   --decor-color: var(--accent-color);
   --title-decor-color: #000028;
   --title-decor-bg: var(--accent-color);
+
+  --second-title: var(--accent-color);
+
+  --section-gap: 50px;
+  --padding-block: 40px;
 }
 
 @media (width >= 768px) {
   :root {
     --page-margin: 20px;
+    --section-gap: 80px;
+    --padding-block: 60px;
   }
 }
 

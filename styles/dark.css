@@ -21,4 +21,6 @@
   --decor-color: var(--accent-color);
   --title-decor-color: #000028;
   --title-decor-bg: var(--accent-color);
+
+  --second-title: var(--accent-color);
 }

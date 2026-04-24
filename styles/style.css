@@ -11,7 +11,6 @@
 }
 
 .header {
-  position: relative;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr min-content 1fr;
@@ -33,7 +32,7 @@
 
 .header__theme-menu-button {
   border: 1px solid transparent;
-  padding: 2px 13px 5px;
+  padding: 2px 13px 4px;
   color: var(--btn-color);
   font-weight: 400;
   line-height: 100%;
@@ -76,12 +75,25 @@
 
 .content {
   margin: 0 var(--page-margin);
+  padding-block: var(--padding-block);
+}
+
+.content__section-title {
+  color: var(--second-title);
+  font-size: inherit;
+  font-weight: 700;
+  line-height: 130%;
+}
+
+.content__section:not(:last-of-type) {
+  margin-bottom: var(--section-gap);
 }
 
 .footer {
   position: relative;
   height: 100vh;
   margin: var(--page-margin);
+  padding-block: var(--padding-block);
 }
 
 @media (width >= 768px) {
@@ -107,9 +119,4 @@
   .header__theme-menu-list {
     flex-direction: row;
   }
-}
-
-/* удалить в конце */
-section {
-  min-height: 500px;
 }

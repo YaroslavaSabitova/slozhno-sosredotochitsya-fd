@@ -21,6 +21,10 @@
   aspect-ratio: 1/1;
 }
 
+.decorated-zone {
+  position: relative;
+}
+
 .decorated-zone::before,
 .decorated-zone::after {
   content: '';
