@@ -15,6 +15,7 @@
   grid-template-columns: 1fr;
   grid-template-rows: 1fr min-content 1fr;
   height: 100vh;
+  min-height: 668px;
   margin: var(--page-margin);
 }
 
@@ -99,7 +100,9 @@
 }
 
 .content__section_vertical .cards {
-  margin-top: var(--section-title-margin);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .card__title {
@@ -115,6 +118,7 @@
 .footer {
   position: relative;
   height: 100vh;
+  min-height: 668px;
   margin: var(--page-margin);
   padding-block: var(--padding-block);
 }
@@ -138,6 +142,16 @@
     gap: 20px;
   }
 
+  .content__section_vertical {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .content__section_vertical .cards {
+    grid-column: 1/-1;
+  }
+
   .content__section-title {
     margin-bottom: 0;
   }
@@ -159,7 +173,6 @@
 
   .content__section_vertical .cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(315px, 100%), 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
