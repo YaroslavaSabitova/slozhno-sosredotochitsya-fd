@@ -12,8 +12,13 @@
   --page-bg: url(../images/cover-image-light.png);
   --accent-color: #ff8dcb;
   --main-title-color: #ffc2e6;
+
   --btn-color: #353430;
   --btn-hover-border: rgba(50, 49, 45, 0.4);
+
+  --decor-color: var(--btn-color);
+  --title-decor-color: var(--btn-color);
+  --title-decor-bg: var(--accent-color);
 }
 
 .theme-light .header__decor {

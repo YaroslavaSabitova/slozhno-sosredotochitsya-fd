@@ -23,6 +23,7 @@
 .header__theme-menu {
   justify-self: end;
   align-self: center;
+  grid-column: 1/-1;
 }
 
 .header__theme-menu-list {
@@ -58,6 +59,11 @@
   font-size: var(--main-title-size);
   line-height: 83%;
   text-shadow: 4px 4px 0 var(--accent-color);
+  grid-column: 1/-1;
+}
+
+.header__text {
+  align-self: center;
 }
 
 .content {
@@ -75,6 +81,14 @@
   .header,
   .footer {
     min-height: 1024px;
+  }
+
+  .header {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .header__text {
+    grid-column: 2/-1;
   }
 
   .main-title {

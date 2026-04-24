@@ -13,8 +13,12 @@
   --main-title-color: #db00ff;
 
   --accent-color: #ff0070;
-  --btn-color: #ff0070;
+  --btn-color: var(--accent-color);
   --btn-hover-border: rgba(255, 0, 112, 0.4);
+
+  --decor-color: var(--accent-color);
+  --title-decor-color: #000028;
+  --title-decor-bg: var(--accent-color);
 }
 
 @media (width >= 768px) {
