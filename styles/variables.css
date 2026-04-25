@@ -7,6 +7,7 @@
   --font-size: 18px;
 
   --page-bg: url(../images/cover-image-dark.png);
+  --bg-color: #000028;
   --page-margin: 10px;
 
   --main-title-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);

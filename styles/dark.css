@@ -12,6 +12,8 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   --page-bg: url(../images/cover-image-dark.png);
+  --bg-color: #000028;
+
   --accent-color: #ff0070;
   --main-title-color: #db00ff;
 
