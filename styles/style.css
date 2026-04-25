@@ -16,7 +16,7 @@
   grid-template-rows: 1fr min-content 1fr;
   height: 100vh;
   min-height: 668px;
-  margin: var(--page-margin);
+  margin: 0 var(--page-margin);
 }
 
 .header__theme-menu {
@@ -168,7 +168,7 @@
   align-items: center;
   height: 100vh;
   min-height: 668px;
-  margin: var(--page-margin);
+  margin: 0 var(--page-margin);
 }
 
 .footer__title {
@@ -244,6 +244,7 @@
   .header__theme-menu {
     justify-self: center;
     align-self: start;
+    margin-top: 20px;
   }
 
   .header__theme-menu-list {
