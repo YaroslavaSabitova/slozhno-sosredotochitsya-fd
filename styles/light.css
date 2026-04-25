@@ -34,6 +34,23 @@
 @media (prefers-color-scheme: light) {
   :root {
     /* Дублируем только те же переменные, что и выше */
+
+    --page-bg: url(../images/cover-image-light.png);
+    --bg-color: #fff1f7;
+
+    --accent-color: #ff8dcb;
+    --main-title-color: #ffc2e6;
+    --text-color: #353430;
+
+    --btn-color: var(--text-color);
+    --btn-hover-border: rgba(50, 49, 45, 0.4);
+
+    --decor-color: var(--text-color);
+    --title-decor-color: var(--text-color);
+    --title-decor-bg: var(--accent-color);
+
+    --second-title: var(--text-color);
+    --card-text: var(--text-color);
   }
 
   .header__decor {

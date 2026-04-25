@@ -61,12 +61,17 @@
   pointer-events: none;
 }
 
-.main-title {
-  grid-column: 1/-1;
+.title {
   color: var(--main-title-color);
+  font-family: var(--font-family);
   font-weight: 700;
   font-size: var(--main-title-size);
   line-height: 83%;
+  text-transform: lowercase;
+}
+
+.header__title {
+  grid-column: 1/-1;
   text-shadow: 4px 4px 0 var(--accent-color);
 }
 
@@ -158,11 +163,16 @@
 }
 
 .footer {
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
   min-height: 668px;
   margin: var(--page-margin);
-  padding-block: var(--padding-block);
+}
+
+.footer__title {
+  text-shadow: 2px 2px 0 var(--accent-color);
 }
 
 @media (width >= 768px) {
