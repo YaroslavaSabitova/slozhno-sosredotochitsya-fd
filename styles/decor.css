@@ -2,7 +2,7 @@
   position: absolute;
   top: 10px;
   right: 0;
-  display: flex;
+  display: var(--header-decor-display);
   align-items: center;
   color: var(--decor-color);
   font-weight: 400;

@@ -26,4 +26,9 @@
 
   --second-title: var(--accent-color);
   --card-text: #f1b2ce;
+  --header-decor-display: flex;
+}
+
+.theme-dark .header__decor {
+  display: var(--header-decor-display);
 }

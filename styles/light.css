@@ -25,10 +25,12 @@
 
   --second-title: var(--text-color);
   --card-text: var(--text-color);
+
+  --header-decor-display: none;
 }
 
 .theme-light .header__decor {
-  display: none;
+  display: var(--header-decor-display);
 }
 
 @media (prefers-color-scheme: light) {
@@ -51,9 +53,11 @@
 
     --second-title: var(--text-color);
     --card-text: var(--text-color);
+
+    --header-decor-display: none;
   }
 
   .header__decor {
-    display: none;
+    display: var(--header-decor-display);
   }
 }
